@@ -1,0 +1,394 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.noto-serif-100 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 0;
+  }
+
+.noto-serif-900 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 900;
+  }
+
+.roboto-100 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+nav{
+    display: flex;
+    background-color: rgb(19, 41, 19);
+    color: whitesmoke;
+    height: 45px;
+}
+
+nav ul li{
+    font-size: 20px;
+    list-style-type:none;
+
+}
+
+nav ul li:hover{
+    font-weight:600;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 12px;
+}
+
+.active {
+    background-color: #658467;
+  }
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 0px 0px 0px 32px;
+    margin: 0px;
+    align-items: center;
+}
+
+body{
+    margin: 0px;
+}
+
+.hero{
+    width: auto;
+    height: auto;
+    background-color: #3C2F2F;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    padding: 24px 48px;
+    gap:48px;
+    color:aliceblue;
+    font-size: 24px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cover_pic img{
+    width: 40vw;
+    height: auto;
+    border-radius: 8px;
+}
+ .zongzi_type {
+    background-color: rgb(196, 202, 169);
+    padding: 24px 48px;
+ } 
+
+.welcome_title{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.welcome_title p{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.content{
+    font-family: Roboto;
+}
+
+.intro_zongzi{
+    width: auto;
+    height: auto;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 48px;
+    gap:24px;
+}
+
+.intro_zongzi p{
+    font-size: 20px;
+    /* padding-top: 2vh; */
+    line-height: 1.5;
+}
+
+.zongzi_type_intro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px 0px;
+}
+
+.zongzi_recipe{
+    width: 100%;
+    height: auto;
+    padding: 24px 48px;
+    gap:24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ECDCC2;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 16px 24px;
+    gap: 20px;
+    flex:1 0 0;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    width: 250px;
+    min-width: 250px;
+    max-width: 350px;
+    height: auto;
+}
+
+.card p{
+    justify-content: flex-start;
+    padding: 0px 16px 8px 16px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    border-radius: 8px;
+}
+
+.card:hover{
+    background-color: rgb(248, 222, 188);
+    cursor: pointer;
+    transform: scale(1.02);
+    border: 2px solid #d4af37;
+}
+
+.card:active{
+    background-color: rgb(248, 222, 188);
+    cursor: pointer;
+    transform: scale(1.02);
+    border: 2px solid #d4af37;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.checklist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color: #242424;
+    padding: 24px;
+    margin: 16px 0px;
+    border-radius: 8px;
+}
+
+
+
+.checklist img{
+    width:150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.checklist li{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.list_item{
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px; 
+    list-style: none;
+    margin: 1rem;
+}
+
+.list_item li{
+    margin-bottom: 16px;
+}
+
+
+.list_item li input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px;
+}
+
+.list_item li label{
+    font-size: 20px;
+}
+
+.item_img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .item_img {
+    display: block;
+    margin: 0.5rem auto 0 auto; 
+    width: 100%;
+    height: auto;
+}  */
+
+.step_title{
+    background-color: #2F2F2F;
+    color:white;
+    padding: 16px;
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.step_content{
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+.step_content img{
+    width: 200px;
+    height: 150px;
+}
+
+.bullion_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bullion_list li{
+    list-style-type:disc;
+    font-size: 20px;
+}
+
+.choose_flavor{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.choose_flavor button{
+    width: auto;
+    height: 50px;
+    background-color:#cfb68a;
+    margin: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 0.5px;
+    cursor: pointer;
+}
+
+.choose_flavor button:hover{
+    background-color: rgb(228, 221, 198);
+    border: 2px solid rgb(135, 90, 26);
+}
+
+footer{
+    width: 100%;
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: darkolivegreen;
+    color: azure;
+    font-size: 1.2rem;
+}
+
+footer p{
+    padding-bottom: 2vh;
+}
+    
+.social_media{
+    display: flex;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    gap: 10px;
+}
+
+.social_media a{
+    color: azure;
+    font-size: 32px;
+}
+
+@media screen and (max-width:768px) {
+
+    .hero{
+        width: auto;
+        height: auto;
+        /* background-color: rgb(107, 10, 10); */
+        background-color: #3C2F2F;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding: 24px 48px;
+        gap:48px;
+        color:aliceblue;
+        font-size: 24px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .cover_pic img{
+        width: 60vw;
+        height: auto;
+        border-radius: 8px;
+    }    
+
+    .checklist{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+        background-color: #242424;
+        padding: 24px;
+        margin: 16px 0px;
+        border-radius: 8px;
+    }
+    
+    .step_content{
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+}

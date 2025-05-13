@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zongzi</title>
+    <script src="https://kit.fontawesome.com/f6b1e980df.js" crossorigin="anonymous"></script>
+    <!-- text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- link css file -->
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="hero noto-serif-900">
+        <div class="welcome_title">
+            <h1>Discover Taiwan’s Zongzi (Rice dumplings)</h1>
+            <p>Explore the rich traditions, tastes, and stories behind one of Asia’s most iconic rice dumplings.</p>
+        </div>
+        <div class="cover_pic">
+            <img src="https://cw-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fcdn-www.cw.com.tw%2Farticle%2F202306%2Farticle-64902e5722ebe.jpg/?w=1600&format=webp" alt="cover_zongzi">
+        </div>
+    </div>
+    <div class="content">
+        <div class="intro_zongzi">
+            <h2>What is Zongzi?</h2>
+            <p>Zongzi is a traditional Chinese rice dumpling made of glutinous rice filled with savory or sweet ingredients, wrapped in bamboo leaves, and steamed or boiled. It is especially eaten during the Dragon Boat Festival, which falls on the 5th day of the 5th month in the lunar calendar. Zongzi varies by region—northern versions tend to be more savory and feature stir-fried rice, while southern ones are softer and boiled with raw rice. Common fillings include pork belly, mushrooms, salted egg yolks, and chestnuts. Zongzi is more than food—it’s a cultural symbol of remembrance, family, and tradition.</p>
+        </div>
+        <div class="zongzi_type">
+            <h2>Types of Zongzi</h2>
+            <div class="zongzi_type_intro">
+                <div class="card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/zongzi-or-bakcang-royalty-free-image-1685434489.jpg?crop=1.00xw:0.668xh;0,0.212xh&resize=500:*" alt="Northern-style_Zongzi">
+                    <h3>Northern-style Zongzi</h3>
+                    <p>Zongzi made with stir-fried glutinous rice, resulting in separate grains with a rich flavor.</p>
+                </div>
+                <div class="card">
+                    <img src="./image/South_Zongzi.png" alt="Southern-styl_Zongzi">
+                    <h3>Southern-style Zongzi</h3>
+                    <p>Zongzi made with uncooked glutinous rice, wrapped and then cooked, resulting in a sticky, mellow texture.</p>
+                </div>
+                <div class="card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/close-up-of-food-in-banana-leaves-on-table-bekasi-royalty-free-image-1685435289.jpg?crop=0.668xw:1.00xh;0.189xw,0&resize=500:*" alt="Hakka-style Zongzi">
+                    <h3>Hakka-style Zongzi</h3>
+                    <p>Zongzi often filled with preserved vegetables, salted radish, or other savory ingredients.</p>
+                </div>
+                <div class="card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/alkaline-rice-dumpling-zongzi-traditional-sweet-royalty-free-image-1685434660.jpg?crop=0.668xw:1.00xh;0.253xw,0&resize=500:*" alt="Sweet-style_Zongzi">
+                    <h3>Sweet-style Zongzi</h3>
+                    <p>Zongzi with no filling, usually served with sugar, honey, or other sweet toppings, with a chewy texture.</p>
+                </div>
+            </div>
+        </div>
+        <div class="zongzi_recipe">
+            <h2>How to make a delicious Zongzi</h2>
+            <div class="step_title"><h3>Step 1: Choose one flavor you want to make</h3></div>
+            <div class="choose_flavor">
+                <button type="button" id="btn1"><h3>(1) Northern-style Zongzi</h3></button>
+                <button type="button" id="btn2"><h3>(2) Southern-style Zongzi</h3></button>
+                <button type="button" id="btn3"><h3>(3) Hakka-style Zongzi</h3></button>
+                <button type="button" id="btn4"><h3>(4) Sweet-style Zongzi</h3></button>
+            </div>
+            <div class="step_title"><h3>Step 2: Prepare ingredients</h3></div>
+            <div>
+                <h3>Main ingredients</h3>
+                <ul class="checklist">
+                    <div class="list_item">
+                        <li><input type="checkbox" id="ingredients1"><label for="ingredients1"> Glutinous rice (sticky rice)</label></li>
+                        <div class="item_img">
+                            <img src="/image/rice.png">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="ingredients2"><label for="ingredients2"> Pork belly (marinated)</label></li>
+                        <div class="item_img">
+                            <img src="/image/pork_belly.png">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="ingredients3"><label for="ingredients3"> Shiitake mushrooms</label></li>
+                        <div class="item_img">
+                            <img src="/image/mushroom.png">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="ingredients4"><label for="ingredients4"> Dried shrimp</label></li>
+                        <div class="item_img">
+                            <img src="/image/dried_shrimp.png">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="ingredients5"><label for="ingredients5"> Chestnuts</label></li>
+                        <div class="item_img">
+                            <img src="/image/chestnuts.png">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="ingredients6"><label for="ingredients6"> Boiled salted egg yolks</label></li>
+                        <div class="item_img">
+                            <img src="/image/eggs.png">
+                        </div>
+                    </div>
+                </ul>
+                <h3>Seasonings</h3>
+                <ul class="checklist">
+                    <div class="list_item">
+                        <li><input type="checkbox" id="seasonings1"><label for="seasonings1"> Soy sauce</label></li>
+                        <div class="item_img">
+                            <img src="https://i1.sndcdn.com/artworks-000101864530-69vbl3-t500x500.jpg">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="seasonings2"><label for="seasonings2"> Five-spice powder</label></li>
+                        <div class="item_img">
+                            <img src="data:image/jpeg;base64,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">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="seasonings3"><label for="seasonings3"> White pepper power</label></li>
+                        <div class="item_img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7otFAtFErkZsmfHOlljaTrxN__loUlGYUg&s">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="seasonings4"><label for="seasonings4"> Rice wine (optional)</label></li>
+                        <div class="item_img">
+                            <img src="data:image/jpeg;base64,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">
+                        </div>
+                    </div>
+                </ul>
+                <h3>Package</h3>
+                <ul class="checklist">
+                    <div class="list_item">
+                        <li><input type="checkbox" id="package1"><label for="package1"> Bamboo leaves (for wrapping)</label></li>
+                        <div class="item_img">
+                            <img src="/image/leaves.png">
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <li><input type="checkbox" id="package2"><label for="package2"> Kitchen twine (to tie zongzi)</label></li>
+                        <div class="item_img">
+                            <img src="https://m.media-amazon.com/images/I/71HoiqS1dzL._AC_UF1000,1000_QL80_.jpg">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="step_title"> <h3>Step 3: Stir-fry the Glutinous Rice</h3></div>
+            <div class="step_content">
+                <img src="./image/stir-fry-rice.png" alt="stir-fry-rice">
+                <ul class="bullion_list">
+                    <li>Add oil to a wok.</li>
+                    <li>Stir in glutinous rice until fragrant.</li>
+                    <li>Season with soy sauce, five-spice powder, and rice wine.</li>
+                    <li>Cook until rice is evenly colored. Set aside.</li>
+                </ul>
+            </div>
+            <div class="step_title"> <h3>Step 4: Prepare the Fillings</h3></div>
+            <div class="step_content">
+                <img src="./image/prepare_the_filling.png" alt="prepare_the_filling">
+                <ul class="bullion_list">
+                    <li>Pork Belly: Pan-fry until aromatic, then simmer with soy sauce, sugar, and rice wine until fully seasoned.</li>
+                    <li>Shiitake Mushrooms & Dried Shrimp: Stir-fry separately until fragrant.</li>
+                    <li>Chestnuts: Blanch briefly to remove bitterness (or pre-cook them if desired).</li>
+                </ul>
+            </div>
+            <div class="step_title"> <h3>Step 5: Prepare the Bamboo Leaves</h3></div>
+            <div class="step_content">
+                <img src="./image/prepare-leaves.png" alt="prepare-leaves">
+                <ul class="bullion_list">
+                    <li>Rinse bamboo leaves thoroughly.</li>
+                    <li>Blanch in hot water for 5 minutes.</li>
+                    <li>Wipe dry and set aside.</li>
+                </ul>
+            </div>
+            <div class="step_title"> <h3>Step 6: Wrap the Zongzi</h3></div>
+            <div class="step_content">
+                <img src="./image/assemble_the_zongzi.png" alt="assemble_the_zongzi">
+                <ul class="bullion_list">
+                    <li>Fold two leaves into a cone.</li>
+                    <li>Fill with rice, then add pork, mushroom, shrimp, and chestnut.</li>
+                    <li>Cover with more rice, press firmly, and tie with string.</li>
+                </ul>
+            </div>
+            <div class="step_title"> <h3>Step 7: Steam the Zongzi</h3></div>
+            <div class="step_content">
+                <img src="./image/steam.png" alt="stir-fry-rice">
+                <ul class="bullion_list">
+                    <li>Place wrapped zongzi in a steamer.</li>
+                    <li>Steam for 1.5–2 hours over medium-high heat until fully cooked.</li>
+                </ul>
+            </div>
+            <div class="step_title"> <h3>Step 8: Enjoy!</h3></div>
+            <div class="step_content">
+                <img src="./image/eat_zongzi.png" alt="stir-fry-rice">
+                <ul class="bullion_list">
+                    <li>Best eaten hot.</li>
+                    <li>Optional sauces: sweet chili or garlic soy sauce.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="social_media">
+		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+	</div>
+    <p>©2025 Ya-Lan Design Studio. All copyright reserved.</p>
+</footer>
+</html>
